@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+#main{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to right, red , yellow);
+    margin-top: 0px;
+    border-radius: 50px;
+    color: white;
+  font-weight: bold;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  top: 100px;
+  left: 700px;
+  border: none;
+  
+
+}
+#image{
+    background-image: url("360_F_275924184_GP4ACV80EK8NokxlFaUB2qykpXKrroqx.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#show-hide{
+  display: inline;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(118, 122, 117);
+  margin-top: 0px;
+  border-radius: 50px;
+  color: white;
+font-weight: bold;
+position: absolute;
+transform: translate(-50%, -50%);
+z-index: 1;
+width: 75%;
+padding: 20px;
+text-align: center;
+top: 170px;
+left: 700px;
+}
+a{
+  list-style-type: none;
+  color: aquamarine;
+  font-family:monospace;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+#au{
+  padding: 50px;
+}
+.bg-text-one {
+  background-image:url("Picture2.png");
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 200px;
+  padding: 150px;
+  text-align: center;
+  transition: transform .5s;
+  margin: 0px 10px;
+  bottom: 300px;
+}
+.bg-text-one:hover{
+  transform: scale(1.5);
+  top:55%;
+  bottom: 10% !important; 
+  z-index: 2;
+  box-shadow: 2px 2px 2px #000;
+ }
+.vl {
+  height: 200px;
+  position: absolute;
+transform: translate(-50%, -50%);
+z-index: 0.5;
+display: inline;
+width: 5px;
+
+    text-align: center;
+    background-color: aliceblue;
+    top: 55%;
+    left: 50%;
+}
+.bg-text-two {
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 55%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 200px;
+  padding: 150px;
+  text-align: center;
+  transition: transform .5s;
+  margin: 0px 10px;
+  bottom: 300px;
+  background-image: url("Picture 1.jpg");
+}
+.bg-text-two:hover{
+  transform: scale(1.5);
+  top: 55%;
+  z-index: 2;
+  box-shadow: 2px 2px 2px #000;
+}
+#op{
+  text-decoration: underline;
+  font-size:80px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+    </style>
+<div id="image">
+
+</div>
+<div id="show-hide"> 
+    <a href="about.html" id="au"> About us</a>
+
+</div>
+<button id="main" onclick="myFunction()">
+    <h1>Pizaz </h1>
+
+</button>
+<a href="delivery.html">
+<div class="bg-text-one">
+    <h1 id="op">Delivery</h1>
+
+  </div>
+</a>
+<a href="options.html">
+    <div class="vl"></div>
+    <div class="bg-text-two"><h1 id="op">Options</h1> 
+    </div>
+</a>
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("show-hide");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
